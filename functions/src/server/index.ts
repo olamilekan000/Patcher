@@ -30,7 +30,20 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(router)
 
-app.get('/', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+/**
+ * @api {get} / Welcomes you with a welcome message
+ * @param { Request } req
+ * @param { Response } res
+ * @param { NextFunction } next
+ * @apiSuccess {json} welcome Welcome message
+ * @apiSuccessExample {json} Success
+ *    HTTP/1.1 200 OK
+ *    {
+ *      "message": 'hi',
+ *    }
+ */
+
+app.get('/', (req: any, res: any, next: any) => {
   res
     .status(200)
     .json({

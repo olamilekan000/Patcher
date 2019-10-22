@@ -213,7 +213,7 @@ describe('Test Application', async () => {
           res.should.have.status(200)
           res.type.should.be.eql('application/json')
           res.body.message.should.eql('Patch was successful')
-          res.body.data.villian_name.should.eql('stain')
+          res.body.data.villain_name.should.eql('stain')
           res.body.data.real_name.should.eql('Chizome Akaguro')
           res.body.data.quirk.should.eql('Blood Cuddle')
           res.body.data.nick_name.should.eql('Hero Killer')

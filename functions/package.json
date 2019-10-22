@@ -5,13 +5,14 @@
     "build": "tsc",
     "serve": "npm run build && firebase serve --only functions",
     "shell": "npm run build && firebase functions:shell",
-    "start": "npm run shell",
+    "start:firebase": "npm run shell",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log",
     "dev": "ts-node-dev --respawn ./src/app.ts",
     "test": "export NODE_ENV=TEST&& mocha --timeout 5000 --exit --require ts-node/register --colors tests/**/*.ts",
     "coverage": "nyc npm run test",
-    "prod": "node ./lib/app.js"
+    "start": "node ./lib/app.js",
+    "docs": "apidoc -i lib/"
   },
   "engines": {
     "node": "8"

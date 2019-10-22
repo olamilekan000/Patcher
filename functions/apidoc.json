@@ -1,0 +1,5 @@
+{
+  "name": "Patcher",
+  "version": "0.1.0",
+  "description": "A serverless microservice to demonstrate json-patch, image resizing and jwt authentication and authorization usage in nodejs"
+}
