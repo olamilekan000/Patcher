@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/Desktop/Play-ground/hackerbay/
+    working_directory: ~/Desktop/Play-ground/hackerbay/functions
     docker:
       - image: circleci/node:10.16.3
 
