@@ -36,6 +36,7 @@ app.use(router)
  * @param { Response } res
  * @param { NextFunction } next
  * @apiSuccess {json} welcome Welcome message
+ * @apiGroup Patcher
  * @apiSuccessExample {json} Success
  *    HTTP/1.1 200 OK
  *    {

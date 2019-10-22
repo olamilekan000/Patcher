@@ -25,6 +25,7 @@ const patcher = {
  * @apiSuccess {String} profiles.real_name Villain Real-name
  * @apiSuccess {String} profiles.quirk Villain Quirk
  * @apiSuccess {String} profiles.nick_name Villain Nick-name
+ * @apiGroup Patcher
  * @apiHeader {String} Authorization='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJhZG1pbm1hbiQiLCJzdWIiOiJvbGEiLCJpYXQiOjE1NzE3NDU4NDYsImV4cCI6MTU3MTc0Njg0Nn0.Fjd7COvqJxeYnfo_AfR3gkchhBOA2wcvkzEOJ5v0mNo'
  * @apiParamExample {json} Input
  *    {
@@ -44,6 +45,12 @@ const patcher = {
  *        "quirk": "Blood Cuddle",
  *        "nick_name": "Hero Killer",
  *      }
+ *    }
+ * @apiErrorExample {json} Authentication Error
+ *    HTTP/1.1 401 Unauthorized
+ *    {
+ *      "error": "Unauthorized User",
+ *      "message": "You need to be logged in to perform this action"
  *    }
  * @typedef {Object} patcher
  * @property {function}  add  - function
