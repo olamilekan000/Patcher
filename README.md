@@ -88,12 +88,6 @@ Begin linting with the following command:
 npm run lint
 ```
 
-To begin linting and start the server simultaneously, edit the `package.json` like this:
-
-```md
-"dev": "nodemon src/index.js --exec \"node -r dotenv/config -r babel-register\" | npm run lint"
-```
-
 ### License
 
 MIT License. See the [LICENSE](LICENSE) file.
