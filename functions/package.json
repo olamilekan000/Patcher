@@ -12,7 +12,8 @@
     "test": "export NODE_ENV=TEST&& mocha --timeout 5000 --exit --require ts-node/register --colors tests/**/*.ts",
     "coverage": "nyc npm run test",
     "start": "node ./lib/app.js",
-    "docs": "apidoc -i lib/ -o apidoc/"
+    "docs": "apidoc -i lib/ -o apidoc/",
+    "start:image": "node app"
   },
   "engines": {
     "node": "8"

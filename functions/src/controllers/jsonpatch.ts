@@ -3,9 +3,9 @@ import jsonpatch from 'jsonpatch'
 /**
  *
  * @typedef {Object} villainProfile
- * @property {string}  villain_name  - Name of the villain.
- * @property {string}  real_name - villain's real name.
- * @property {string}  quirk - villain's quirk.
+ * @property {string} villain_name  - Name of the villain.
+ * @property {string} real_name - villain's real name.
+ * @property {string} quirk - villain's quirk.
  * @description - The objects contains the properties of a
  *                villain in which a patch is going to be applied on.
  */
