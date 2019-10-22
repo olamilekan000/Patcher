@@ -13,7 +13,7 @@ and jwt authentication and authorization usage in nodejs.
 ## Technologies
 
 - [Express.js](https://expressjs.com/) as the web framework.
-- TypeScript [TypeScript](https://www.typescriptlang.org/).
+- ES2017+ with TypeScript [TypeScript](https://www.typescriptlang.org/).
 - Linting with [TSlint](https://palantir.github.io/tslint/).
 - Testing with [Mocha](https://mochajs.org/).
 - Testing with [Chai](https://www.chaijs.com/).
